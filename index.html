@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cce3de;
+        }
+        header {
+            background-color: #a4c3b2; /* Material Design Primary Color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .contact-details img {
+            width: 40px; /* Adjust the width as needed */
+            height: 40px; /* Adjust the height as needed */
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        .contact-details a {
+            text-decoration: none;
+        }
+        .tagline {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 16px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .project-card {
+            background-color: #eff6e0; /* Material Design Background Color */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #01161e; /* Material Design Text Color */
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .project-details {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .project-details h3 {
+            margin-top: 0;
+        }
+        .technologies {
+            columns: 1;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .technologies li {
+            margin-bottom: 5px;
+        }
+        /* Material Design Color Theme */
+        .project-card {
+            background-color: #fafafa; /* Material Design Light Grey Background */
+            color: #424242; /* Material Design Grey Text Color */
+        }
+        .project-card:hover {
+            background-color: #f5f5f5; /* Material Design Light Grey Background on Hover */
+        }
+        .tag-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Use a large value for rounded shape */
+            font-size: 0.65rem; /* text-xs equivalent */
+            background-color: #ade8f4; /* Material Design Primary Color */
+            color: #03045e; /* Text color */
+            margin-right: 0.25rem; /* mr-1 equivalent */
+            margin-bottom: 0.55rem; /* mb-1 equivalent */
+            text-decoration: none;
+            opacity: 0.7; /* bg-opacity-5 equivalent */
+            pointer-events: none; /* Prevents clicking */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="resources/prof_pic.jpg" alt="Your Profile Picture">
+        <h1>Ganesh Sankar</h1>
+        <div class="tagline">Data Scientist</div>
+        <div class="description">
+            <p>A driven data science enthusiast with 2 years of industry experience, strong technical skills, and a desire to create real-world impacts by leveraging data.</p>
+        </div>
+
+        <div class="contact-details">
+            <a href="https://www.linkedin.com/in/ganeshs0504/" target="_blank" class="contact-link">
+                <img src="resources/linkedin_icon.png">
+            </a>
+            <a href="https://github.com/ganeshvicky" target="_blank" class="contact-link">
+                <img src="resources/github_icon.png">
+            </a>
+        </div>
+    </div>
+    </header>
+
+    <div class="projects">
+        <a href="project3.html" class="project-card">
+            <img src="resources/project3_banner.png" alt="Project 3 Image" class="project-image">
+            <div class="project-details">
+                <h3>Geo-localized twitter data exploration (London City)</h3>
+                <div class="technologies">
+                    <!-- Buttons representing technologies -->
+                    <span class="tag-button">Technology 1</span>
+                    <span class="tag-button">Technology 2</span>
+                    <span class="tag-button">Technology 3</span>
+                    <span class="tag-button">Technology 4</span>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        </a>
+        <a href="project3.html" class="project-card">
+            <img src="resources/project6_banner.jpg" alt="Project 3 Image" class="project-image">
+            <div class="project-details">
+                <h3>Pret subscription analysis (Vega-Altair Visualization)</h3>
+                <div class="technologies">
+                    <!-- Buttons representing technologies -->
+                    <span class="tag-button">Technology 1</span>
+                    <span class="tag-button">Technology 2</span>
+                    <span class="tag-button">Technology 3</span>
+                    <span class="tag-button">Technology 4</span>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        </a>
+        <a href="project3.html" class="project-card">
+            <img src="resources/project5_banner.jpg" alt="Project 3 Image" class="project-image">
+            <div class="project-details">
+                <h3>Secondary protien structure prediction (Kaggle Competition)</h3>
+                <div class="technologies">
+                    <!-- Buttons representing technologies -->
+                    <span class="tag-button">Technology 1</span>
+                    <span class="tag-button">Technology 2</span>
+                    <span class="tag-button">Technology 3</span>
+                    <span class="tag-button">Technology 4</span>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        </a>
+        <a href="project3.html" class="project-card">
+            <img src="resources/project4_banner.png" alt="Project 3 Image" class="project-image">
+            <div class="project-details">
+                <h3>ECG beats data classification and clustering</h3>
+                <div class="technologies">
+                    <!-- Buttons representing technologies -->
+                    <span class="tag-button">Technology 1</span>
+                    <span class="tag-button">Technology 2</span>
+                    <span class="tag-button">Technology 3</span>
+                    <span class="tag-button">Technology 4</span>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        </a>
+        <a href="https://medium.com/@gv.ganesh0504/shot-boundary-detection-and-video-captioning-25cba380792b" class="project-card" target="_blank">
+            <img src="resources/project1_banner.png" alt="Project 1 Image" class="project-image">
+            <div class="project-details">
+                <h3>Shot boundary detection and video captioning using DCNN and LSTM</h3>
+                <div class="technologies">
+                    <!-- Buttons representing technologies -->
+                    <span class="tag-button">Dilated CNN</span>
+                    <span class="tag-button">LSTM Network</span>
+                    <span class="tag-button">Time series data</span>
+                    <span class="tag-button">Cosine Similarity</span>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        </a>
+        <a href="https://medium.com/@gv.ganesh0504/sheet-music-transcriber-using-cnn-6080786f4924" class="project-card" target="_blank">
+            <img src="resources/project2_banner.jpg" alt="Project 2 Image" class="project-image">
+            <div class="project-details">
+                <h3>Music notation transcriber using CNN (Flask Application)</h3>
+                <div class="technologies">
+                    <!-- Buttons representing technologies -->
+                    <span class="tag-button">Tensorflow</span>
+                    <span class="tag-button">CNN</span>
+                    <span class="tag-button">Flask</span>
+                    <span class="tag-button">Image pre-processing</span>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        </a>
+        
+        <!-- Add more project cards as needed -->
+    </div>
+</body>
+</html>
